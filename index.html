@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Card</title>
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- bootstrap icon cdn link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-app">
+            <div class="movie-poster">
+                <img src="images/ironman.jpg" alt="Iron Man(2008) Movie">
+            </div>
+            <div class="movie-header">
+                <div class="img">
+                    <img src="images/Iron_Man_logo.jpg" alt="">
+                </div>
+                <div class="title">
+                    <h3><a href="" class="link">Iron Man</a></h3>
+                    <div class="star">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+                <div class="play-icon">
+                    <a href="https://youtu.be/8ugaeA-nMTc"><i class="bi bi-play-fill"></i></a>
+                </div>
+            </div>
+            <div class="details">
+                <div class="duration">
+                    <div class="div">Duration</div>
+                    <span>2h 6m</span>    
+                </div>
+                <div class="language">
+                    <div class="div">Lang</div>
+                    <span>Eng</span>
+                </div>
+                <div class="rating">
+                    <div class="div">Rating</div>
+                    <span>7.9/10</span>
+                </div>
+                <div class="review">
+                    <div class="div">Review</div>
+                    <span>1.5K</span>
+                </div>
+            </div>
+            <div class="btns">
+                <button>Watch</button>
+                <img src="images/bookmark.png" class="image-icon" onclick="bookmark()" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function bookmark(){
+            let icon = document.querySelector(".image-icon");
+            let toast  = document.querySelector(".toast");
+            if(icon.src.match("bookmark.png")){
+                icon.src = "images/bookmark-fill.png";
+            }else{
+                icon.src = "images/bookmark.png"
+            }
+        }
+    </script>
+</body>
+</html>
