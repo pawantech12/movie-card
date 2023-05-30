@@ -18,7 +18,7 @@
 
 ### Desktop Preview
 
-![Pricing Card Desktop Demo](./preview.JPG)
+https://github.com/pawantech12/movie-card/assets/118673866/8dec2782-a247-45dd-aa14-2d8826e9f9f2
 
 ### Prerequisites
 
